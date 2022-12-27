@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="orderListStyling.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Orders List</title>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script> -->
+<link href="getAndUpdateFirebaseData.css" rel="stylesheet"></head>
+
+<body class="p-5 pt-0 text-white m-0">
+
+    <!--Nav Bar-->
+    <nav class="navbar  d-flex justify-content-end p-0 pt-2 mb-4">
+        <ul class="nav">
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-2 py-0 rounded me-3" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-2 py-0 rounded" href="./adminView.html">Admin Page</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Select Queues-->
+    <section class="position-relative d-inline">
+        <div id="selectQueue" class="d-inline">
+            <select class="fw-bold py-md-2 px-md-4 py-1 px-2 queuesSelect rounded">
+                <option>--Select Queue--</option>
+            </select>
+        </div>
+        <div id="checkBoxQueues" class="bg-white text-dark position-absolute">
+            <label for="inTheQueue" class="ps-4 d-block"> 
+                <input type="checkbox" id="inTheQueue"/>
+                In The Queue
+            </label>
+            <label for="beingMixed" class="ps-4 d-block">
+                <input type="checkbox" id="beingMixed"/>
+                Being Mixed
+            </label>
+            <label for="readyToCollect" class="ps-4 d-block">
+                <input type="checkbox" id="readyToCollect"/>
+                Ready To Collect
+            </label>
+        </div>
+    </section>
+
+
+    <!--Orders Table-->
+    <table id="ordersList">
+        <thead>
+            <th>ID</th>
+            <th>Customer Name</th>
+            <th>Beverage Name</th>
+            <th>Action</th>
+        </thead>
+        <!-- <tbody id="inTheQueueRow">
+            <tr>
+                <td colspan="4"><label for="inTheQueueCheckBox">In The Queue</label><input type="checkbox" name="inTheQueue" id="inTheQueueCheckBox" onchange="checkAll(this)" style="vertical-align: middle;"/></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Charan</td>
+                <td>Coconut Water</td>
+                <td><input name="inTheQueue" type="checkbox"/></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Charan</td>
+                <td>Coconut Water</td>
+                <td><input name="inTheQueue" type="checkbox"/></td>
+            </tr>
+        </tbody>    -->
+    </table>
+    <div id="submitData" class="text-end mt-4">
+        <select id="shiftToQueue" class="fw-bold p-md-2 p-1 me-4 rounded">
+            <option>--Shift To Queue--</option>
+            <option value="inTheQueue">In The Queue</option>
+            <option value="beingMixed">Being Mixed</option>
+            <option value="readyToCollect">Ready To Collect</option>
+            <option value="deleteOrder">Delete Order</option>
+        </select>
+        <input type="button" value="Submit" class="fw-bold rounded-pill py-md-2 px-md-5 py-1 px-4 submitChanges" id="updateLocalStorage" />
+    </div>
+    <!-- <script type="text/javascript" src="../Index_Page/fireStoreAccess.js"></script> -->
+    <!-- <script type="text/javascript" src="getAndUpdateFirebaseData.js"></script> -->
+<script src="getAndUpdateFirebaseData.bundle.js"></script><script src="runtime.bundle.js"></script><script src="vendors-node_modules_firebase_app_dist_index_esm_js-node_modules_firebase_firestore_dist_inde-439294.bundle.js"></script><script src="sharedFireStoreAccess.bundle.js"></script></body>
+
+</html>

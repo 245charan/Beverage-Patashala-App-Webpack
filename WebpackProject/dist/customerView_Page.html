@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilt-Free Beverages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="customerView_Styling.css"> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script> -->
+<link href="fetchBeveragesList.css" rel="stylesheet"></head>
+
+<body class="m-0 text-white">
+
+    <!--Nav Bar-->
+    <nav class="navbar  d-flex justify-content-end p-0 pt-2">
+        <ul class="nav me-3">
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-2 py-0 rounded me-3" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-2 py-0 rounded" href="./orderForm.html">Place an Order</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--Section to display Menu and Queue -->
+    <section class="container-fluid">
+
+        <div class="row screenRow">
+            <!--Menu Block-->
+            <div class="col-md-3 screenColumn h-100 mt-sm-5 mt-4 mt-lg-4 mt-xl-0">
+                <article class="h-100">
+                    <h2 class="mt-1 mb-2 text-center text-uppercase fw-bold h2Size">BEVERAGE MENU</h3>
+                        <section class="overflow-auto border border-white h-100 p-3 scrollBar" id="menuSection">
+                            <!-- <div class="drinkName">GreenTea</div> -->
+                        </section>
+                </article>
+            </div>
+
+            <!--Queues Block-->
+            <div class="col-md-9 screenColumn h-100  mt-5 mt-lg-4 mt-xl-0">
+                <article class="h-100">
+                    <h2 class="mt-1 mb-2 text-center text-uppercase fw-bold h2Size">BEVERAGE QUEUE</h3>
+                        <section class="overflow-auto border border-white h-100 container-fluid scrollBar">
+                            <div class="row ordersRow">
+                                <div class="col">
+                                    <article id="inTheQueue">
+                                        <h3 class="fw-bold mt-3 text-center h3Size">IN THE QUEUE</h3>
+                                        <!-- <div class="name_drink">
+                                            <div class="drink">Green Tea</div>
+                                            <div class="name">Charan</div>
+                                        </div> -->
+                                    </article>
+                                </div>
+                                <div class="col">
+                                    <article id="beingMixed">
+                                        <h3 class="fw-bold mt-3 text-center h3Size">BEING MIXED</h3>
+                                    </article>
+                                </div>
+                                <div class="col">
+                                    <article id="readyToCollect">
+                                        <h3 class="fw-bold mt-3 text-center h3Size">READY TO COLLECT</h3>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script type="text/javascript" src="../Index_Page/fireStoreAccess.js"></script>
+    <script type="text/javascript" src="fetchBeveragesList.js"></script>
+    <script type="text/javascript" src="getCustomersData.js"></script>
+    <script type="text/javascript" src="removeOrderFromQueue.js"></script> -->
+<script src="fetchBeveragesList.bundle.js"></script><script src="runtime.bundle.js"></script><script src="vendors-node_modules_firebase_app_dist_index_esm_js-node_modules_firebase_firestore_dist_inde-439294.bundle.js"></script><script src="sharedFireStoreAccess.bundle.js"></script><script src="sharedGetCustomersData.bundle.js"></script></body>
+
+</html>

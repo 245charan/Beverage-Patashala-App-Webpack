@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Favourite Beverage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="orderFormStyling.css"> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script> -->
+<link href="storeCustomerData.css" rel="stylesheet"></head>
+
+<body class="m-3 px-xl-5 px-4 border border-white">
+    <!--Nav Bar-->
+    <nav class="navbar  d-flex justify-content-end p-0 pt-2">
+        <ul class="nav me-0">
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-1 py-0 rounded me-3" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item navList">
+                <a class="nav-link navLink fw-bold p-0 px-1 py-0 ms-2 rounded" href="./customerView_Page.html">View Your Order</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="text-center text-white bodyH1 mb-xl-3 mt-xl-3 mt-5 mb-4">Order Your Beverage</h1>
+    <section class="border border-white h-75 d-flex justify-content-center align-items-center">
+        <p class="fw-bold position-fixed orderMessage" id="orderPlacedMessage">Your Order is Placed! Please wait in the queue!</p>
+        <!-- <form id="orderForm">
+            <div>
+                <label for="customerName">Name</label>
+                <input type="text" name="customerName" id="customerName" autocomplete="off" pattern="[a-zA-Z]{3,}" placeholder="Enter Your Name" required/>
+            </div>
+            <div>
+                <span>Beverages</span>
+                <select name="beverageList" id="beverageList">
+                    <option value="">-Please Select-</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" value="Submit" id="storeData">
+            </div>
+        </form> -->
+        <div class="container w-50">
+            <div class="row g-4">
+                <div class="col-md-4 col-12 d-flex justify-content-md-end justify-content-start">
+                    <label for="customerName" class="text-white">Name</label>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-start">
+                    <input type="text" class="border border-white text-white userFill" name="customerName" id="customerName" autocomplete="off" pattern="[a-zA-Z]{3,}" placeholder="Enter Your Name" required/>
+                </div>
+                <div class="col-md-4 col-12 d-flex justify-content-md-end justify-content-start">
+                    <span class="text-white">Beverages</span>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-start">
+                    <select name="beverageList" class="text-white userFill border border-white" id="beverageList">
+                        <option value="">-Please Select-</option>
+                    </select>
+                </div>
+                <div class="col-md-4 d-flex justify-content-md-end justify-content-start">
+                    <div></div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-start">
+                    <input type="button" class="btn text-black fw-bold bg-white rounded-pill py-md-1 px-md-3 py-0 px-1" value="Submit" id="storeData">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script type="text/javascript" src="../Index_Page/fireStoreAccess.js"></script>
+    <script type="text/javascript" src="fetchBeverageMenu.js"></script>
+    <script type="text/javascript" src="storeCustomerData.js"></script> -->
+<script src="storeCustomerData.bundle.js"></script><script src="runtime.bundle.js"></script><script src="vendors-node_modules_firebase_app_dist_index_esm_js-node_modules_firebase_firestore_dist_inde-439294.bundle.js"></script><script src="sharedFireStoreAccess.bundle.js"></script></body>
+
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+
+/*Nav Bar*/
+
+.navLink {
+    font-size: 1em;
+    color: white;
+}
+
+.navLink:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*Select Queues Style*/
+
+#checkBoxQueues label:hover {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+}
+
+.queuesSelect {
+    pointer-events: none;
+}
+
+#checkBoxQueues {
+    width: 195px;
+    color: black;
+    display: none;
+}
+
+
+/*Orders Table*/
+
+table#ordersList {
+    width: 100%;
+    margin-top: 2%;
+    background-color: rgb(54, 53, 53)
+}
+
+table.orderQueues {
+    width: 100%;
+}
+
+table#ordersList,
+th,
+td {
+    border: 1px solid white;
+    color: white;
+    border-collapse: collapse;
+    padding: 0.5%;
+    font-size: 1em;
+}
+
+tbody tr:first-child td {
+    text-align: right;
+}
+
+tbody tr:first-child td label {
+    margin-right: 20px;
+}
+
+tbody tr:first-child td input {
+    margin-right: 10px;
+}
+
+thead {
+    background-color: rgb(29, 18, 18);
+}
+
+tbody tr:first-child {
+    background-color: rgb(34, 31, 31);
+}
+
+table#ordersList input[type="checkbox"] {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+tbody td:first-child {
+    text-align: right;
+}
+
+table thead tr th:first-child {
+    text-align: right;
+}
+
+
+/*Submission*/
+
+.submitChanges {
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+
+.submitChanges:hover {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#shiftToQueue option:first-child {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 0.8em;
+    }
+    #checkBoxQueues {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 0.5em;
+    }
+    #checkBoxQueues {
+        width: 101px;
+    }
+}

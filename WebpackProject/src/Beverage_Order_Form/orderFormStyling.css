@@ -1,0 +1,68 @@
+body {
+    height: 95vh;
+    background-color: rgb(34, 34, 34);
+    font-size: 1em;
+}
+
+
+/*Nav Bar*/
+
+.navLink {
+    font-size: 1em;
+    color: white;
+}
+
+.navLink:hover {
+    background-color: white;
+    color: black;
+}
+
+.bodyH1 {
+    font-size: 2em;
+}
+
+.orderMessage {
+    background-color: rgba(216, 216, 35, 0.938);
+    top: 28%;
+    font-size: 1em;
+    display: none;
+}
+
+
+/* Styling Customer form for beverage Selection*/
+
+.userFill {
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 200px;
+    height: 25px;
+}
+
+select#beverageList option:first-child {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .userFill {
+        width: 150px;
+        height: 25px;
+    }
+    .bodyH1 {
+        font-size: 1.5em;
+    }
+    .orderMessage {
+        font-size: 0.9em;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        font-size: 0.8em;
+    }
+}
